@@ -37,6 +37,11 @@ public class CadLivro extends JFrame {
         btnOk = new JButton("OK");
         btnCancelar = new JButton("Cancelar");
 
+        //Instanciando o Listener
+        MeuListener ouvinte = new MeuListener();
+        // Vinculando o Listener ao componente
+        btnOk.addActionListener(ouvinte);
+
 
         // SETA TODOS OS JLABEL PARA A DIREITA
         //CompId.setHorizontalAlignment(SwingConstants.RIGHT);
