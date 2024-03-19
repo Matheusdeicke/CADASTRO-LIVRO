@@ -16,22 +16,22 @@ public class CadLivro extends JFrame {
 
         setSize(400, 300); // Tamanho da Janela
         c.setLayout(new FlowLayout()); // Define o layout do container básico
-        p1.setLayout(new GridLayout(6, 2)); // Define o layout dos Panels
+        p1.setLayout(new GridLayout(0, 2, 10, 5)); // Define o layout dos Panels
 
         // COMPONENTES
-        CompId = new JLabel("ID:");
+        CompId = new JLabel("ID:", SwingConstants.RIGHT);
         txtId = new JTextField(5);
 
-        CompTitulo = new JLabel("Titulo:");
+        CompTitulo = new JLabel("Titulo:", SwingConstants.RIGHT);
         txtTitulo = new JTextField(15);
 
-        CompAutor = new JLabel("Autor:");
+        CompAutor = new JLabel("Autor:", SwingConstants.RIGHT);
         txtAutor = new JTextField(15);
 
-        CompCat = new JLabel("Categoria:");
+        CompCat = new JLabel("Categoria:", SwingConstants.RIGHT);
         txtCat = new JTextField(15);
 
-        CompData = new JLabel("Data de Lcto:");
+        CompData = new JLabel("Data de Lcto:", SwingConstants.RIGHT);
         txtData = new JTextField(10);
 
         btnOk = new JButton("OK");
@@ -39,11 +39,11 @@ public class CadLivro extends JFrame {
 
 
         // SETA TODOS OS JLABEL PARA A DIREITA
-        CompId.setHorizontalAlignment(SwingConstants.RIGHT);
-        CompTitulo.setHorizontalAlignment(SwingConstants.RIGHT);
-        CompAutor.setHorizontalAlignment(SwingConstants.RIGHT);
-        CompCat.setHorizontalAlignment(SwingConstants.RIGHT);
-        CompData.setHorizontalAlignment(SwingConstants.RIGHT);
+        //CompId.setHorizontalAlignment(SwingConstants.RIGHT);
+        //CompTitulo.setHorizontalAlignment(SwingConstants.RIGHT);
+        //CompAutor.setHorizontalAlignment(SwingConstants.RIGHT);
+        //CompCat.setHorizontalAlignment(SwingConstants.RIGHT);
+        //CompData.setHorizontalAlignment(SwingConstants.RIGHT);
 
         // SETA UMA FONTE DIFERENTE
         Font fontePersonalizada = new Font("Times New Roman", Font.BOLD, 14);
